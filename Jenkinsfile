@@ -4,7 +4,7 @@ pipeline{
     
       stage('1. checkout'){
         steps{
-          git url:'https://github.com/harish-nagure/dockerddemo.git',branch:'main'
+          git url:'https://github.com/sumit151286/Docker13.git',branch:'main'
         }
       }
       
@@ -16,7 +16,7 @@ pipeline{
   
       stage('3. Stop/Remove old Containers'){
         steps{
-          bat 'docker stop mycont || exit 0'
+          bat 'docker stop mycount || exit 0'
           bat 'docker rm mycount || exit 0'
         }
       }
