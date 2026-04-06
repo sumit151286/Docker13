@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages{
-    stage('checkout'}{
+    stage('checkout'){
       steps{
         git url:https://github.com/sumit151286/Docker13/new/main
           }
